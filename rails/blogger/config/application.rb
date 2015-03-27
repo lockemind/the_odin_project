@@ -22,5 +22,8 @@ module Blogger
 
     # Do not swallow errors in after_commit/after_rollback callbacks.
     config.active_record.raise_in_transactional_callbacks = true
+
+    # You can tell Rails not to bootstrap your application during asset compilation in 
+    config.assets.initialize_on_precompile = false
   end
 end
